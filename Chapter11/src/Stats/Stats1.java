@@ -16,23 +16,31 @@ public class Stats1
 		File File = new File(file); //creates a file
 		
 		
-		if(file.equals("/Chapter11/src/Stats/TestResults")) 
+		if(file.equals("/Chapter11/src/Stats/TestResults")) //if the user enters the name of the pre existing file then the program will run 
 		{
 			
 			FileReader in = null;
 			BufferedReader fileReader = null;
 			
 			String read;
-			//add doubles here
+			double HScore, LScore, TScore, AScore;
 			
 			
-			ArrayList<String> stuNames = new ArrayList<String>();
-			ArrayList<String> stuScore = new ArrayList<String>();
+			String stuNames;
+			double stuScore;
+			
 			
 			fileReader = new BufferedReader(in);
 			
 			while((read = fileReader.readLine()) != null) 
 			{
+				stuNames = fileReader.readLine();
+				fileReader.readLine();
+				
+			
+				stuScore = fileReader.readLine();
+				
+			
 				
 			}
 				
