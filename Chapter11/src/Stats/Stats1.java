@@ -17,7 +17,7 @@ public class Stats1
 		BufferedReader File;
 		
 		String file, readLine;
-		double lScore, hScore, aScore;
+		double Score, lScore, hScore, aScore;
 		
 
 		System.out.println("Enter the name of the file: "); //Obtain file name from user
@@ -49,7 +49,12 @@ public class Stats1
 				readLine = File.readLine();
 				stuScore.add(readLine);
 				System.out.println(stuScore + "\t");
+				
+				Score = Double.parseDouble(readLine);
 			}
+			
+			
+			
 			
 			
 			
