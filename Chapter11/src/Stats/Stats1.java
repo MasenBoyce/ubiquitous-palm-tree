@@ -1,8 +1,10 @@
 package Stats;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.*;
+import java.util.ArrayList;
+
+
 
 public class Stats1 
 {
@@ -10,46 +12,57 @@ public class Stats1
 	{
 		Scanner input = new Scanner(System.in);
 		
+		File textFile;
+		FileReader in;
+		BufferedReader File;
 		
-		System.out.println("Enter the name of a file: "); //prompts user to enter a file name
-		String file = input.next(); //stores the entered file name
-		File File = new File(file); //creates a file
+		String file, readLine;
+		double lScore, hScore, aScore;
+		
+
+		System.out.println("Enter the name of the file: "); //Obtain file name from user
+		file = input.nextLine();
 		
 		
-		if(file.equals("/Chapter11/src/Stats/TestResults")) //if the user enters the name of the pre existing file then the program will run 
+		textFile = new File(file); //Read file, display student name and statistics
+		
+		
+		ArrayList<String> stuName = new ArrayList<String>();
+		ArrayList<String> stuScore = new ArrayList<String>();
+		
+		
+		
+		try 
 		{
-			
-			FileReader in = null;
-			BufferedReader fileReader = null;
-			
-			String read;
-			double HScore, LScore, TScore, AScore;
+			in = new FileReader(textFile);
+			File = new BufferedReader(in);
 			
 			
-			String stuNames;
-			double stuScore;
 			
 			
-			fileReader = new BufferedReader(in);
-			
-			while((read = fileReader.readLine()) != null) 
+			while((readLine = File.readLine()) != null) 
 			{
-				stuNames = fileReader.readLine();
-				fileReader.readLine();
+				stuName.add(readLine);
+				System.out.println(stuName + "\t");
 				
-			
-				stuScore = fileReader.readLine();
 				
-			
-				
+				readLine = File.readLine();
+				stuScore.add(readLine);
+				System.out.println(stuScore + "\t");
 			}
-				
-				
-				
-				
-				
+			
+			
+			
+			
+			
 			
 		}
 		
-	}
+		catch(IOException e) 
+		{
+			System.out.println("File not found");
+			System.err.println("FileNotFoundException: " + e.getMessage());
+		}		
+	}	
 }
+
