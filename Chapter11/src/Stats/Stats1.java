@@ -10,18 +10,20 @@ public class Stats1
 {
 	public static void main(String[] args) 
 	{
-		Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in); //allows program to read user input
 		
-		File textFile;
+		//assigns variables to read the file
+		File textFile; 
 		FileReader in;
 		BufferedReader File;
 		
+		//initializes variables
 		String file, readLine;
-		double Score, aScore;
-		double lScore = 100;
-		double hScore = 0;
-		double tScore = 0;
-		double nScore = 0;
+		double Score, averageScore;
+		double lowestScore = 100;
+		double highestScore = 0;
+		double totalScore = 0;
+		double numberScore = 0;
 		
 
 		System.out.println("Enter the name of the file: "); //Obtain file name from user
@@ -31,8 +33,8 @@ public class Stats1
 		textFile = new File(file); //Read file, display student name and statistics
 		
 		
-		ArrayList<String> stuName = new ArrayList<String>();
-		ArrayList<String> stuScore = new ArrayList<String>();
+		ArrayList<String> stuName = new ArrayList<String>(); //initializes an array to store student names
+		ArrayList<String> stuScore = new ArrayList<String>(); //initializes an array to store student scores
 		
 		
 		
@@ -45,26 +47,26 @@ public class Stats1
 			
 			while((readLine = File.readLine()) != null) 
 			{
-				stuName.add(readLine);
+				stuName.add(readLine); //adds the students name to the array
 				
 				
 				readLine = File.readLine();
-				stuScore.add(readLine);
+				stuScore.add(readLine); //adds the students score to the array
 
 				
-				Score = Double.parseDouble(readLine);
-				tScore += Double.parseDouble(readLine);
-				nScore += 1;
+				Score = Double.parseDouble(readLine); //converts the students score from a string into a double value 
+				totalScore += Double.parseDouble(readLine);
+				numberScore += 1; //tracks the amount of scores that have been saved to the arrays
 				
 				
-				if (Score > hScore) 
+				if (Score > highestScore) //determines which student got the highest score 
 				{
-					hScore = Score;
+					highestScore = Score;
 				}
 				
-				if (Score < lScore) 
+				if (Score < lowestScore) //determines which student got the lowest score
 				{
-					lScore = Score;
+					lowestScore = Score;
 				}
 				
 				
@@ -73,14 +75,14 @@ public class Stats1
 			}
 			
 			
-			aScore = tScore / nScore;
+			averageScore = totalScore / numberScore; //calculates the average score
 			
-			
+			//prints all the information gathered to the user
 			System.out.println("\n" + stuName + "\t");
 			System.out.println(stuScore + "\t");
-			System.out.println("\n\nHighest Score: " + hScore);
-			System.out.println("Lowest Score: " + lScore);
-			System.out.println("Average Score: " + aScore);
+			System.out.println("\n\nHighest Score: " + highestScore);
+			System.out.println("Lowest Score: " + lowestScore);
+			System.out.println("Average Score: " + averageScore);
 			
 			
 			
@@ -93,7 +95,7 @@ public class Stats1
 			
 		}
 		
-		catch(IOException e) 
+		catch(IOException e) //searches for errors (such as missing file) before the code is executed
 		{
 			System.out.println("File not found");
 			System.err.println("FileNotFoundException: " + e.getMessage());
