@@ -10,17 +10,19 @@ public class Stats2
 	{
 		Scanner input = new Scanner(System.in);
 		
+		//initializes variables
 		int numStu = 0;
 		String stuName;
 		double stuScore;
 		
+		//creates file and the variables that write and read the file
 		File dataFile = new File("StuScores.dat");
 		FileWriter out;
 		BufferedWriter writeFile;
 	
 		
-		System.out.println("How many students are being assessed? ");
-		numStu = input.nextInt();
+		System.out.println("How many students are being assessed? "); //prompts user to enter the number of students
+		numStu = input.nextInt(); //stores entered value
 		
 		
 		try 
@@ -29,16 +31,16 @@ public class Stats2
 			writeFile = new BufferedWriter(out);
 			
 			
-			for(int stuCounter = 0; stuCounter < numStu; stuCounter++) 
+			for(int stuCounter = 0; stuCounter < numStu; stuCounter++) //counts how many students have been entered into the program 
 			{
 				
-				System.out.println("Enter name of Student: ");
-				stuName = input.next();
+				System.out.println("Enter name of Student: "); //prompts user for student name
+				stuName = input.next(); //stores entered name
 				
-				System.out.println("Enter grade of student: ");
-				stuScore = input.nextDouble();
+				System.out.println("Enter grade of student: "); //prompts user to enter student grade
+				stuScore = input.nextDouble(); //stores entered value
 				
-				
+				//adds the information to the file
 				writeFile.write(stuName);
 				writeFile.newLine();
 				writeFile.write(String.valueOf(stuScore));
