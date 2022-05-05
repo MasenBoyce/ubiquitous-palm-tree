@@ -47,8 +47,8 @@ public class Stats2
 				writeFile.newLine();
 			}
 			
-			writeFile.close();
-			out.close();
+			writeFile.close(); //closes file
+			out.close(); //closes out
 		}
 		
 		
