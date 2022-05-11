@@ -1,3 +1,14 @@
+/*
+
+	Program: FindAndReplace.java          Last Date of this Revision: May 11, 2022
+	Purpose: This program allows the user to enter the name of a file and enter a word or phrase they want to find in the file. The user can then replace the word or phrase with another word or phrase.
+	Author: Masen Boyce 
+	School: CHHS
+	Course: Computer Science 30
+ 
+*/
+
+
 package FindAndReplace;
 
 import java.io.*;

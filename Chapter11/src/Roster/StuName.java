@@ -1,3 +1,14 @@
+/*
+
+	Program: StuName.java         Last Date of this Revision: May 11, 2022
+	Purpose: A class that stores the names of students and returns them to the roster application
+	Author: Masen Boyce 
+	School: CHHS
+	Course: Computer Science 30
+ 
+*/
+
+
 package Roster;
 import java.io.*;
 

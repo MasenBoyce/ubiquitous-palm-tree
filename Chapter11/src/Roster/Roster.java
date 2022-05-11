@@ -1,3 +1,14 @@
+/*
+
+	Program: Roster.java          Last Date of this Revision: May 11, 2022
+	Purpose: This program allows the user to create a file and enter an amount of students. The user will then enter the names of each student and it will display them.
+	Author: Masen Boyce 
+	School: CHHS
+	Course: Computer Science 30
+ 
+*/
+
+
 package Roster;
 
 import java.util.Scanner;

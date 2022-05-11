@@ -1,3 +1,14 @@
+/*
+
+	Program: Stats2.java         Last Date of this Revision: May 11, 2022
+	Purpose: This program allows the user to create a file and enter the name and score of students and it will display the data including the lowest, highest, and average scores.
+	Author: Masen Boyce 
+	School: CHHS
+	Course: Computer Science 30
+ 
+*/
+
+
 package Stats;
 
 import java.util.Scanner;

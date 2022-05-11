@@ -1,3 +1,14 @@
+/*
+
+	Program: Stats1.java          Last Date of this Revision: May 11, 2022
+	Purpose: This program asks the user to enter the name of a file that contains the names and scores of students and displays each one as well as the lowest, highest, and average scores.
+	Author: Masen Boyce 
+	School: CHHS
+	Course: Computer Science 30
+ 
+*/
+
+
 package Stats;
 
 import java.util.Scanner;
