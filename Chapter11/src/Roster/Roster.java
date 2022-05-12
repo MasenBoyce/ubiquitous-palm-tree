@@ -70,7 +70,7 @@ public class Roster
 				
 				for(int counter = 0; counter < numStu; counter++) 
 				{
-					
+					System.out.println("\n");
 					System.out.println((StuName)rStuName.readObject());
 				}
 				
@@ -93,3 +93,51 @@ public class Roster
 			}
 	}
 }
+
+
+/*
+
+Screen dump:
+
+
+Enter the name of the file: 
+Roster
+How many students are being assessed? 
+5
+Enter the first name of the Student: 
+Masen
+Enter the last name of the Student: 
+Boyce
+Enter the first name of the Student: 
+Marcus
+Enter the last name of the Student: 
+Vuorinen
+Enter the first name of the Student: 
+Carter
+Enter the last name of the Student: 
+Sarney
+Enter the first name of the Student: 
+Eli
+Enter the last name of the Student: 
+Baerg
+Enter the first name of the Student: 
+Ali
+Enter the last name of the Student: 
+Akbari
+
+
+Masen Boyce
+
+
+Marcus Vuorinen
+
+
+Carter Sarney
+
+
+Eli Baerg
+
+
+Ali Akbari
+
+*/

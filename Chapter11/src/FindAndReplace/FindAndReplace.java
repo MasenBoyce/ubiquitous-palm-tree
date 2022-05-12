@@ -54,6 +54,9 @@ public class FindAndReplace
 			
 			fWriter = new BufferedWriter(new FileWriter(dataFile));
 			fWriter.write(newData);
+			
+			
+			System.out.println("data (" + findText + ") has been overwritten with " + replaceText);
 		}
 		
 		
@@ -64,3 +67,19 @@ public class FindAndReplace
 		}	
 	}
 }
+
+
+/*
+
+Screen Dump:
+
+
+Please enter the name of the file: 
+File
+Please enter the word or string of text you want to find: 
+ABC
+Please enter the word or string of text you want to replace it with: 
+DEF
+data (ABC) has been overwritten with DEF
+
+*/

@@ -78,11 +78,7 @@ public class Stats1
 				if (Score < lowestScore) //determines which student got the lowest score
 				{
 					lowestScore = Score;
-				}
-				
-				
-						
-				
+				}	
 			}
 			
 			
@@ -94,17 +90,9 @@ public class Stats1
 			System.out.println("\n\nHighest Score: " + highestScore);
 			System.out.println("Lowest Score: " + lowestScore);
 			System.out.println("Average Score: " + averageScore);
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+				
 		}
+		
 		
 		catch(IOException e) //searches for errors (such as missing file) before the code is executed
 		{
@@ -113,4 +101,23 @@ public class Stats1
 		}		
 	}	
 }
+
+
+/*
+
+Screen dump:
+
+
+Enter the name of the file: 
+../Chapter11/src/Stats/Test1.txt
+
+[Masen Boyce, Carter Sarney, Ali Akbari, Eli Baerg, Marcus Vuorinen]	
+[90, 92, 61, 25, 100]	
+
+
+Highest Score: 100.0
+Lowest Score: 25.0
+Average Score: 73.6
+
+*/
 

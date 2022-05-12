@@ -151,3 +151,34 @@ public class Stats2
 		
 	}
 }
+
+
+/*
+
+Screen dump:
+
+
+How many students are being assessed? 
+3
+Enter name of Student: 
+Masen
+Enter grade of student: 
+80
+Enter name of Student: 
+Ali
+Enter grade of student: 
+85
+Enter name of Student: 
+Eli
+Enter grade of student: 
+90
+
+[Masen, Ali, Eli]	
+[80.0, 85.0, 90.0]	
+
+
+Highest Score: 90.0
+Lowest Score: 80.0
+Average Score: 85.0
+
+*/
