@@ -12,7 +12,7 @@ public class Search
 		}
 		
 		
-		if(array[index] == numToFind) 
+		if(array[index].equals numToFind) 
 		{
 			return(index);
 		}
