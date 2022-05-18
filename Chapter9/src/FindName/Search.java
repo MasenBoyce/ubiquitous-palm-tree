@@ -2,17 +2,18 @@ package FindName;
 
 public class Search 
 {
-	public static int linear(int[] array, int numToFind) 
+	public static int linear(String[] array, String nameToFind) 
 	{
 		int index = 0;
 		
-		while ((array[index] != numToFind) && (index < array.length - 1)) 
+		
+		while ((!array[index].equals(nameToFind)) && (index < array.length - 1)) 
 		{
 			index += 1;
 		}
 		
 		
-		if(array[index].equals numToFind) 
+		if(array[index].equals(nameToFind)) 
 		{
 			return(index);
 		}
