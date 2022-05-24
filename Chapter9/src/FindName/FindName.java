@@ -1,3 +1,14 @@
+/*
+
+	Program: FindName.java         Last Date of this Revision: May 24, 2022
+	Purpose: This program prompts the user to add a list of names to an array then asks the user to find a name inside the array
+	Author: Masen Boyce 
+	School: CHHS
+	Course: Computer Science 30
+ 
+*/
+
+
 package FindName;
 
 import java.util.*;
@@ -41,10 +52,30 @@ public class FindName extends Search
 		
 		else 
 		{
-			System.out.println("The name can be found at element " + location);
+			System.out.println("The name can be found at index " + location);
 		}
 		
 		
 		
 		}
 }
+
+
+/*
+
+Screen dump:
+
+
+Enter the number of names being added to the list (max 5): 
+3
+Enter the name of person 0: 
+Masen
+Enter the name of person 1: 
+Ali
+Enter the name of person 2: 
+Eli
+Enter the name you would like to find: 
+Ali
+The name can be found at index 1
+
+*/

@@ -1,3 +1,13 @@
+/*
+
+	Program: Squares.java         Last Date of this Revision: May 24, 2022
+	Purpose: This program takes the numbers inside an array and squares them then returns an array with all the new values.
+	Author: Masen Boyce 
+	School: CHHS
+	Course: Computer Science 30
+ 
+*/
+
 package Squares;
 
 
