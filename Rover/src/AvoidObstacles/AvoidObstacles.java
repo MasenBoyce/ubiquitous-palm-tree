@@ -38,6 +38,11 @@ public class AvoidObstacles {
               leftMotors.setTargetVelocity(1);
               rightMotors.setTargetVelocity(1);
               
+              Thread.sleep(600);
+              
+              leftMotors.setTargetVelocity(1);
+              rightMotors.setTargetVelocity(-1);
+              
               
           } else {
               //Move forward slowly (25% max speed)
@@ -46,7 +51,7 @@ public class AvoidObstacles {
           }
 
           //Wait for 250milliseconds
-          Thread.sleep(250);
+          Thread.sleep(100);
       }
   }
 }
